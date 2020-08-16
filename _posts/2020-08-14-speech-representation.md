@@ -46,9 +46,16 @@ we will discuss :
 
 
 ##### MFCC - Mel Frequency Cepstral Coefficients
+- Its a represtation of short term power spectrum
 - Capture the textural aspect of the signal
 - Only in the frrequncy bins vs time vs amplitude domain
 - replicates the human auditory system
 - 13-40 coefficients
+- Steps
+ * take fft (poewr spectrum for frames)
+ * map the powers to mel scale using traingular overlapping (contribution of of energy in differnt frequncy regions)
+ * Take logs of poer (humans do not hear on linear scale so we convert to log scale)
+ * take dct - to find what frequencies the singals belong to
+ 
 - <photo 1> - MFCC photo for same signal
 
