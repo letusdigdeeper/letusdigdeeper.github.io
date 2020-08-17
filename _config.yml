@@ -1,5 +1,5 @@
 # Site
-name: 'The Blog'
+name: 'let us dig deeper'
 description: 'Blogs to document and learn'
 # logo: 'assets/images/logo.png'
 # favicon: 'assets/images/favicon.ico'
@@ -21,7 +21,7 @@ plugins:
 authors:
     pranoot:
       name:           Pranoot Hatwar
-      site:           https://pranoothatwar.wordpress.com
+      # site:           https://pranoothatwar.wordpress.com
       avatar:         /assets/images/pranoot.jpeg
       bio:            "Hi I am Pranoot. Trying to set up a wesite. Hope you like it!"
       email:          pranoot.iitkgp@gmail.com
@@ -29,7 +29,7 @@ authors:
 
     abhinav:
       name:           Abhinav Agarwalla
-      site:           https://www.wowthemes.net
+      # site:           https://www.wowthemes.net
       avatar:         /assets/images/abhinav.jpg
       bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
       email:          navabhi174@gmail.com
