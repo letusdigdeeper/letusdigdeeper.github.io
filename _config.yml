@@ -31,7 +31,7 @@ authors:
       name:           Abhinav Agarwalla
       # site:           https://www.wowthemes.net
       avatar:         assets/images/abhinav.jpg
-      bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
+      bio:            "Hi I am Abhinav. Trying to set up a wesite. Hope you like it!"
       email:          navabhi174@gmail.com
       # twitter:        https://twitter.com/wowthemesnet
  
@@ -45,6 +45,13 @@ defaults:
       layout: post
       author: pranoot
       avatar: assets/images/pranoot.jpeg
+  
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: abhinav
+      avatar: assets/images/abhinav.jpg
       
   # all pages
   - scope:
