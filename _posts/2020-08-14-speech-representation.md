@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Pre-processing of Speech Signals - Only keypoints for now "
+title:  "Pre-processing of Speech Signals"
 author: pranoot
 categories: [ Speech, Tutorial]
-image: assets/images/processing.png
+image: assets/images/spectrogram.png
 tags: [Speech, Tutorial]
 ---
 
-The audio signal represntes simply the time vs amplitude relation. For carrying of several Speech releated tasks eg. Speech Recogniton, Speaker Identification, Emotion Recognition etc. we can represent this in feature space capable of capurting the time frequencty and the energy using furthur processing on the audio signal. We as humans try to get representations by transformation over representaions and we develop representations over those representation till we get a best representaion of that signal. Here I will dicuss some of those digital representation of aaudio signal.
+The audio signal representes simply the time vs amplitude relation. For carrying of several Speech releated tasks eg. Speech Recogniton, Speaker Identification, Emotion Recognition etc. we can represent this in feature space capable of capurting the time frequencty and the energy using furthur processing on the audio signal. We as humans try to get representations by transformation over representaions and we develop representations over those representation till we get a best representaion of that signal. Here I will dicuss some of those digital representation of aaudio signal.
 
 * waveforms
 * FFT
