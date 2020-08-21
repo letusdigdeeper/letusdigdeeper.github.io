@@ -7,27 +7,25 @@ image: assets/images/processing.png
 tags: [Speech, Tutorial]
 ---
 
+The audio signal represntes simply the time vs amplitude relation. For carrying of several Speech releated tasks eg. Speech Recogniton, Speaker Identification, Emotion Recognition etc. we can represent this in feature space capable of capurting the time frequencty and the energy using furthur processing on the audio signal. We as humans try to get representations by transformation over representaions and we develop representations over those representation till we get a best representaion of that signal. Here I will dicuss some of those digital representation of aaudio signal.
 
-Transformation from digital representaions, we develop representations over representation.
-
-Several represeantaions
-- Engineers : MFCC, Triphones, HMM, Network
-- Phonetics : Formants, IPA, Gestures, Spectrograms
-- Linguistics : Phonemes, Allophones, Morphemes
- 
-we will discuss :
 * waveforms
 * FFT
 * STFT
 * spectrogram
 
+<!-- Several represeantaions
+- Engineers : MFCC, Triphones, HMM, Network
+- Phonetics : Formants, IPA, Gestures, Spectrograms
+- Linguistics : Phonemes, Allophones, Morphemes -->
+
 
 ##### Wave form 
-- WAves is acquisition of amplitude with respect to time
-- Sampling Rate 
-- bits/channel
+Waveform is the acquisition of audio signal strenth with respect to time. For every audio signal we define the sampling rate and bits/channel. Audio is an analog signal we convert it to digial signal for further procesing. For that we sample the analog signal at a sampling rate and for each signal acquired we store that strength of the signal in bits. Higher the bitrate quality of the audio is more. higher the sample rate more samples are caputred ina particular time frame.
+
 
 ##### FFT - Fast Fourier Transform
+
 - summation of sin waves of different frequiences
 - waveform to foruier transform is power spectrum
 - magnitude as function of frequency
