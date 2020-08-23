@@ -41,27 +41,43 @@ plt.show()
 ![waveform image]({{ site.baseurl }}/assets/images/post_1/waveform.png)
 
 
+<font size='6'> Fast Fourier Transform</font>
+Fourier transform is a frequency domain representation of the original signal. We decompose a signal into all the consisting pure frequency information. We try to convert time domain waveform to a magnitude as a function of frequency data. We call it Power Spectrum. While doing this transformation from time to frequency domain we lose out on temopral data of the signal. The only differenct in Fourier Transform and Fast Fourier Transform is Fast Fourier Transform is done on continous signal and Fast Fourier Transform is done on discrete time signal.
 
-[logo]: assets/images/spectrogram.png
-<font size='6'>Fourier Transform</font>
-Fourier transform is a frequency domain representation of the original signal. We decompose a signal into all the consisting pure frequency information. We try to convert time domain waveform to a magnitude as a function of frequency data. We call it Power Spectrum. While doing this transformation from time to frequency domain we lose out on temopral data of the signal.
+```
+import numpy as np
 
-![fourier image]({{ site.baseurl }}/assets/images/spectrogram.png)
-<!-- summation of sin waves of different frequiences -->
-<!-- - waveform to foruier transform is power spectrum -->
+fft = np.fft.fft(x)
+mag_fft = np.abs(fft)
+freq_fft = np.linspace(0, sr, len(mag_fft))
+# print (freq_fft)
+plt.plot(freq_fft, mag_fft)
+plt.xlabel("frequency")
+plt.ylabel("magnitude")
+plt.show()
+```
 
-<!-- - <photo 1> - sum of signals -->
-<!-- - <photo 2> - fft of same signal -->
+![fourier image]({{ site.baseurl }}/assets/images/post_1/fft.png)
 
 
 <font size='6'>STFT - Short Time Fourier Transform</font>
+As we know the we lose out on temporal relation in FFT, to retain the temporal information we can do the STFT of the signal. We take small time interval, which we call as time frame. STFT is FFT of different all such time frame. We take a window of small interval of time and calculate FFT of that.    
 - Calculate FFT at differnt intervals
 - Fixed window which moves over the signal to calculte the FFT
 - 3 Dimensions time x frequency x amplitude
 - we do not lose the temporal data and can leverage to calculte the change of amplitude wrt time and frequency
 - <photo1 > - STFT photo for same signal
 
+'''
+X = librosa.stft(x)
+Xdb = librosa.amplitude_to_db(abs(X))
+plt.figure(figsize=(14, 5))
+librosa.display.specshow(Xdb, sr=sr, x_axis='time', y_axis='hz')
+plt.colorbar()
+'''
+
 ![stft image]({{ site.baseurl }}/assets/images/spectrogram.png)
+
 
 <font size='6'>MFCC - Mel Frequency Cepstral Coefficients</font>
 - Its a represtation of short term power spectrum
