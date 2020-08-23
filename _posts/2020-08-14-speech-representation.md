@@ -20,22 +20,20 @@ The audio signal representes simply the time vs amplitude relation. For carrying
 - Linguistics : Phonemes, Allophones, Morphemes -->
 
 
-##### Wave form 
+#### Wave form 
 Waveform is the acquisition of audio signal strenth with respect to time. For every audio signal we define the sampling rate and bits/channel. Audio is an analog signal we convert it to digial signal for further procesing. For that we sample the analog signal at a sampling rate and for each signal acquired we store that strength of the signal in bits. Higher the bitrate quality of the audio is more. higher the sample rate more samples are caputred ina particular time frame.
 
 
-##### FFT - Fast Fourier Transform
+#### FFT - Fast Fourier Transform
+Fourier transform is a frequency domain representation of the original signal. We decompose a signal into all the consisting pure frequency information. We try to convert time domain waveform to a magnitude as a function of frequency data. We call it Power Spectrum. While doing this transformation from time to frequency domain we lose out on temopral data of the signal.
+<!-- summation of sin waves of different frequiences -->
+<!-- - waveform to foruier transform is power spectrum -->
 
-- summation of sin waves of different frequiences
-- waveform to foruier transform is power spectrum
-- magnitude as function of frequency
-- move from time to frequency domain
-- we lose on temporal data as we calculate calculate the FFT on the whole signal 
-- <photo 1> - sum of signals
-- <photo 2> - fft of same signal
+<!-- - <photo 1> - sum of signals -->
+<!-- - <photo 2> - fft of same signal -->
 
 
-##### STFT - Short Time Fourier Transform
+#### STFT - Short Time Fourier Transform
 - Calculate FFT at differnt intervals
 - Fixed window which moves over the signal to calculte the FFT
 - 3 Dimensions time x frequency x amplitude
@@ -43,7 +41,7 @@ Waveform is the acquisition of audio signal strenth with respect to time. For ev
 - <photo1 > - STFT photo for same signal
 
 
-##### MFCC - Mel Frequency Cepstral Coefficients
+#### MFCC - Mel Frequency Cepstral Coefficients
 - Its a represtation of short term power spectrum
 - Capture the textural aspect of the signal
 - Only in the frrequncy bins vs time vs amplitude domain

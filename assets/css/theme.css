@@ -205,7 +205,7 @@ a.text-dark:hover {
 .navbar-brand {
 	margin-right:2rem;
 	font-size:1.55rem;
-    font-family:"Georgia","Times New Roman",serif;
+    font-family: "Georgia","Times New Roman",serif;
 }
 .dropdown-item {
 	font-weight:400;
@@ -297,7 +297,7 @@ a.text-dark:hover {
 		right:0;
 	}
     .jumbotron-home h1 {
-        font-family: Georgia,Times,"Times New Roman",serif;
+        font-family: 'Arial'; /*Georgia,Times,"Times New Roman",serif;*/
         font-size: 2.4rem;
         font-weight: 700;
         line-height: 1.1;
@@ -652,14 +652,17 @@ footer {
     margin-top:10px;
 }
 article {
-	font-size:20px;
-	line-height:1.86;
-    font-family:Lora;
+	/* font-size:19px; */
+	font-size: 1rem;
+	font-weight: 400;
+	text-align: justify;
+	/* line-height:1.5; */
+    font-family:'Arial';
 }
 .article-headline {
-    font-family: Georgia,Times,"Times New Roman",serif;
-    font-size: 3.2rem;
-    font-weight: 400;
+    font-family: 'Arial'; /*Georgia,Times,"Times New Roman",serif;*/
+    font-size: 3.6rem;
+    font-weight: 430;
     line-height: 1.15;
     color: #222222;
 }
@@ -674,7 +677,7 @@ article blockquote {
 }
 article blockquote:before {
 	content:"“";
-	font-family:Georgia;
+	font-family:Arial;
 	font-size:8rem;
 	margin:-1rem 2rem 0 -3.9rem;
 	position:absolute;
@@ -684,9 +687,9 @@ article blockquote:before {
 }
 article:first-letter {
 	float:left;
-	font-size:5em;
+	font-size:2.8em;
 	line-height:1;
-	margin:0 .2em 0 0;
+	margin:0.05em .2em 0 0;
 	vertical-align:top;
 }
 article h1,article h2,article h3,article h4,article h5,article h6,article .h1,article .h2,article .h3,article .h4,article .h5,article .h6 {
